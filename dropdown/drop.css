@@ -1,0 +1,25 @@
+:root{
+--dis:none;
+}
+
+
+.toogle{
+    width: 100px;
+    background-color: aqua;
+    border-radius:25px;
+    position:relative;
+    top:50px;
+    left:50px;
+}
+.dropdown{
+    list-style-type:none;
+    text-transform: capitalize;
+    position:relative;
+    top:45px;
+    left:40px;
+    display:var(--dis);
+}
+
+.change{
+    --dis:block;
+}
