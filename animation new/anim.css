@@ -1,0 +1,126 @@
+body{background-color: black;}
+
+
+.main {display:flex;
+    width:1500px;
+    height:1500px;
+border:2px solid cornsilk;
+}
+
+.sq1{width:200px;
+height:200px;
+
+position:relative;
+top:200px;
+left:520px;
+border:3px solid transparent;
+border-radius: 200px;
+border-top:3px solid gold;
+border-bottom: 3px solid transparent;
+animation-name: sqq1;
+animation-duration:2s;
+animation-timing-function:linear;
+
+animation-iteration-count: infinite;
+
+}
+
+
+
+
+
+
+
+@keyframes sqq1{from{transform: rotate(0deg);}
+to{transform: rotate(360deg);}
+}
+
+.main .sq1::before{
+    content: ' ';
+    position: absolute;
+    top:11px;
+left:155px;
+width:20px;
+height:20px;
+background-color:goldenrod;
+border-radius:200px;
+box-shadow:0 0 5px rgb(203, 139, 71), 0 0 10px rgb(228, 202, 59), 0 0 15px rgb(241, 222, 110);
+/*animation-name: sqq1;
+animation-duration:5s;
+animation-iteration-count: infinite;*/
+}
+
+.sq2{width:200px;
+    height:200px;
+    border:3px solid transparent;
+    position:relative;
+    top:200px;
+    left:430px;
+    border-top:3px solid gold;
+    border-radius: 200px;
+    animation-name: sqq2;
+animation-duration:3s;
+animation-iteration-count: infinite;
+animation-timing-function:linear;
+animation-direction: reverse;
+
+    }
+    @keyframes sqq2{from{transform: rotate(0deg);}
+to{transform: rotate(360deg);}
+}
+
+
+
+    .main .sq2::before{
+        content: ' ';
+        position: absolute;
+    
+        top:11px;
+    left:24px;
+    width:20px;
+    height:20px;
+    background-color:goldenrod;
+    border-radius:200px;
+    box-shadow:0 0 5px rgb(203, 139, 71), 0 0 10px rgb(228, 202, 59), 0 0 15px rgb(241, 222, 110)
+    }
+    
+
+
+
+
+    .sq3{width:200px;
+        height:200px;
+        border:3px solid transparent;
+        position:absolute;
+        top:120px;
+        left:600px;
+        border-top:3px solid gold;
+        border-radius: 200px;
+        animation-name: sqq3;
+        animation-duration:2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: reverse;
+        
+        }
+
+        @keyframes sqq3{from{transform: rotate(0deg);}
+to{transform: rotate(360deg);}
+}
+
+        .main .sq3::before{
+            content: ' ';
+            position: absolute;
+        
+            top:11px;
+        left:25px;
+        width:20px;
+        height:20px;
+        background-color:goldenrod;
+        border-radius:200px;
+        box-shadow:0 0 5px rgb(203, 139, 71), 0 0 10px rgb(228, 202, 59), 0 0 15px rgb(241, 222, 110);
+        
+}
+        
+        
+    
